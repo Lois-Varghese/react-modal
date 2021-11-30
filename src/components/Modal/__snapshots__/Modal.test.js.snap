@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render component should render Modal Component 1`] = `
+<Fragment>
+  <div
+    className="modal__wrap"
+  >
+    <div
+      className="modal"
+      onClick={[Function]}
+    >
+      <Button
+        className="close__btn"
+        style={
+          Object {
+            "height": 30,
+            "margin": "12px",
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 30,
+          }
+        }
+      >
+        <CloseIcon
+          className="close__icon"
+          height="26px"
+          width="26px"
+        />
+      </Button>
+    </div>
+  </div>
+</Fragment>
+`;

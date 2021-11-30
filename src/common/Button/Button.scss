@@ -1,0 +1,64 @@
+@import '../../styles/abstracts/variables';
+
+.btn {
+  font-family: $font_family_inter;
+  position: relative;
+  font-weight: $font_weight_400;
+  font-size: $medium_font;
+  line-height: 2;
+  height: 40%;
+  transition: all 200ms linear;
+  border-radius: 4px;
+  width: 70%;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  border: none;
+  cursor: pointer;
+  background-color: $color_light_white;
+  color: $color_red;
+  box-shadow: 0 12px 35px 0 $color_black;
+  outline: 0;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background-color: $color_red;
+  color: $color_light_white;
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    font-family: $font_family_inter;
+    position: relative;
+    font-weight: $font_weight_400;
+    font-size: $small_font;
+    line-height: 1;
+    height: 30%;
+    transition: all 200ms linear;
+    border-radius: 4px;
+    width: 60%;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    border: none;
+    cursor: pointer;
+    background-color: $color_light_white;
+    color: $color_red;
+    box-shadow: 0 12px 35px 0 $color_black;
+    outline: 0;
+    text-transform: capitalize;
+  }
+
+  .btn:hover {
+    background-color: $color_red;
+    color: $color_light_white;
+  }
+}

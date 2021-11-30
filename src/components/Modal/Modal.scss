@@ -1,0 +1,60 @@
+@import '../../styles/abstracts/variables';
+
+.modal__wrap {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  overflow-x: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 250ms 700ms ease;
+}
+
+.visible {
+  pointer-events: auto;
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+}
+
+.modal {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  display: block;
+  min-height: 400px;
+  min-width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  padding-bottom: 20px;
+  background-color: $color_white;
+  align-self: center;
+  box-shadow: 0 12px 25px 0 $color_black;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 250ms 250ms ease, transform 300ms 250ms ease;
+  transform: scale(0);
+}
+
+.visible .modal {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
+}
+
+.close__btn {
+  background-color: $color_grey;
+  border-radius: 24px;
+  border: none;
+  display: flex;
+  fill: $color_white;
+  justify-content: center;
+  align-items: center;
+}
